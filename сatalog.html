@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            overflow-x: hidden;
+        }
+        .sidebar {
+            width: 260px;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 40px;
+        }
+        .card-img-placeholder {
+            background: #6c757d;
+            height: 170px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="bg-dark text-white sidebar d-flex flex-column p-3">
+        <h5 class="mb-4">Меню</h5>
+
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link text-white">Главная</a>
+            </li>
+            <li>
+                <a href="catalog.html" class="nav-link active text-white">Категории</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link text-white">Заказы</a>
+            </li>
+            <li>
+                <a href="contacts.html" class="nav-link text-white">Контакты</a>
+            </li>
+        </ul>
+
+        <hr>
+
+        <div class="dropdown mt-auto">
+            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+               data-bs-toggle="dropdown">
+                <img src="https://via.placeholder.com/32" width="32" height="32" class="rounded-circle me-2">
+                <strong>Пользователь</strong>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                <li><a class="dropdown-item" href="#">Профиль</a></li>
+                <li><a class="dropdown-item" href="#">Выход</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div class="content">
+
+        <h2 class="text-center mb-5">Каталог</h2>
+
+        <div class="row g-4">
+
+            <!-- Одна карточка -->
+            <div class="col-md-6 col-xl-3">
+                <div class="card shadow-sm">
+                    <div class="card-img-placeholder">Thumbnail</div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            This is a wider card with supporting text below as a natural lead-in to additional content.
+                            This content is a little bit longer.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button class="btn btn-sm btn-outline-secondary">View</button>
+                                <button class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Дублируем карточки как в макете -->
+            <div class="col-md-6 col-xl-3">
+                <div class="card shadow-sm">
+                    <div class="card-img-placeholder">Thumbnail</div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            This is a wider card with supporting text below as a natural lead-in to additional content.
+                            This content is a little bit longer.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button class="btn btn-sm btn-outline-secondary">View</button>
+                                <button class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+                <div class="card shadow-sm">
+                    <div class="card-img-placeholder">Thumbnail</div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            This is a wider card with supporting text below as a natural lead-in to additional content.
+                            This content is a little bit longer.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button class="btn btn-sm btn-outline-secondary">View</button>
+                                <button class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+                <div class="card shadow-sm">
+                    <div class="card-img-placeholder">Thumbnail</div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            This is a wider card with supporting text below as a natural lead-in to additional content.
+                            This content is a little bit longer.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button class="btn btn-sm btn-outline-secondary">View</button>
+                                <button class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
